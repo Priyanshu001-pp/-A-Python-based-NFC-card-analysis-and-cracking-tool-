@@ -1,0 +1,31 @@
+nfcpy==1.0.4
+pycryptodome==3.18.0
+colorama==0.4.4
+tqdm==4.62.3
+pyserial==3.5
+# Commenting out pyscard as it's optional for basic functionality
+# pyscard==2.0.2
+#Great! I'm glad the NFC cracker is working well in simulation mode for you. Here's a summary of what you've accomplished:
+# You've successfully set up the NFC cracker project with all the necessary files
+# You've modified the requirements to use Windows-compatible packages
+# You've run the tool in simulation mode and seen how it detects and cracks MIFARE Classic cards
+# What You Can Do Next:
+# Explore different attack methods using the advanced_attacks.py script with the simulation flag
+# Customize the code if you want to add new features or attack methods
+# Use with real hardware if you ever get an NFC reader (like an ACR122U)
+# Key Files in Your Project:
+# nfc_cracker.py: The main script for basic card analysis and cracking
+# advanced_attacks.py: Implementation of more sophisticated attack methods
+# nfc_utils.py: Utility functions for working with different card types
+# requirements.txt: Lists all the Python dependencies
+# Basic card analysis with simulation
+# python nfc_cracker.py --simulation
+
+# # Advanced attacks with simulation
+# python advanced_attacks.py --attack nested --simulation
+# python advanced_attacks.py --attack darkside --simulation
+# python advanced_attacks.py --attack mfoc --simulation
+# python advanced_attacks.py --attack ultralight --simulation
+
+# # Continuous scanning
+# python nfc_cracker.py --simulation --continuous
